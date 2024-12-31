@@ -12,7 +12,7 @@ const Products = () => {
   const getProducts = async () => {
     
     try {
-       const response = await axios.get('http://localhost:3000/products');
+       const response = await axios.get('https://products-backend-4wfe.onrender.com/products');
        setProducts(response.data);
     }  catch (error) {
        console.error(error);
